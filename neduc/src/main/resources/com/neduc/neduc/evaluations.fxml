@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="20" style="-fx-padding: 20; -fx-background-color: fce5cc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.neduc.neduc.EvaluationsController">
+
+    <HBox spacing="15" style="-fx-alignment: center-left;">
+        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Filière:" />
+        <ComboBox fx:id="filiereComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Année:" />
+        <ComboBox fx:id="anneeComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Semestre:" />
+        <ComboBox fx:id="semestreComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="ECUE:" />
+        <ComboBox fx:id="ecueComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+        <Button fx:id="btnChargerNotes" onAction="#handleChargerNotes" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Charger les notes" />
+    </HBox>
+
+   <TableView fx:id="tableNotes" editable="true" prefHeight="400" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="colEtudiant" prefWidth="234.0" text="Étudiant" />
+            <TableColumn fx:id="colNote1" prefWidth="147.0" text="Contrôle 1" />
+            <TableColumn fx:id="colNote2" minWidth="0.0" prefWidth="160.0" text="Contrôle 2" />
+            <TableColumn fx:id="colNote3" minWidth="0.0" prefWidth="148.0" text="Contrôle 3" />
+            <TableColumn fx:id="colDevoir" minWidth="0.0" prefWidth="152.0" text="Devoir" />
+            <TableColumn fx:id="colMoyenne" editable="false" prefWidth="158.0" text="Moyenne" />
+        </columns>
+    </TableView>
+
+</VBox>

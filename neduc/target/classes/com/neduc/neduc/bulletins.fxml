@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.neduc.neduc.BulletinsController">
+
+    <Label text="Bulletin Individuel" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    
+    <HBox spacing="10">
+        <Label text="Matricule :"/>
+        <TextField fx:id="matriculeField"/>
+        <Button text="Charger" onAction="#handleChargerBulletin"/>
+    </HBox>
+    
+    <TableView fx:id="bulletinTable" editable="true">
+        <columns>
+            <TableColumn text="UE" fx:id="colUE"/>
+            <TableColumn text="ECUE" fx:id="colECUE"/>
+            <TableColumn text="Note1" fx:id="colNote1"/>
+            <TableColumn text="Note2" fx:id="colNote2"/>
+            <TableColumn text="Note3" fx:id="colNote3"/>
+            <TableColumn text="Devoir" fx:id="colDevoir"/>
+            <TableColumn text="Moyenne ECUE" fx:id="colMoyenneECUE"/>
+        </columns>
+    </TableView>
+</VBox>

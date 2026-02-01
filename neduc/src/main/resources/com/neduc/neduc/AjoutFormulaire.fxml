@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.neduc.neduc.AjoutFormulaireController" spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    <TextField fx:id="txtNom" promptText="Nom" />
+    <TextField fx:id="txtPrenom" promptText="Prénom" />
+    <TextField fx:id="txtEmail" promptText="Email" />
+    <ComboBox fx:id="comboRole" promptText="Sélectionner un rôle" />
+    <Button text="Créer" onAction="#handleAjouter" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+</VBox>

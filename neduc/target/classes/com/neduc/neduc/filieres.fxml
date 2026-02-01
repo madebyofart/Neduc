@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.neduc.neduc.FilieresController">
+    <center>
+        <VBox spacing="20" style="-fx-padding: 20;">
+            <Label text="GESTION DES FILIERES" style="-fx-font-weight: bold; -fx-font-size: 16px;"/>
+            
+            <HBox spacing="10">
+                <Label text="Nom de la Filière :" />
+                <TextField fx:id="nomFiliereField" promptText="Nom de la filière" />
+            </HBox>
+            
+            <HBox spacing="10">
+                <Label text="Code de la Filière :" />
+                <TextField fx:id="codeFiliereField" promptText="Code unique" />
+            </HBox>
+            
+            <HBox spacing="10">
+                <Button text="Ajouter" onAction="#ajouterFiliere" />
+                <Button text="Modifier" onAction="#modifierFiliere" />
+            </HBox>
+            
+            <Label text="Filières Existantes" style="-fx-font-weight: bold;"/>
+            
+            <TableView fx:id="tableFiliere">
+                <columns>
+                    <TableColumn fx:id="colNom" text="Nom" />
+                    <TableColumn fx:id="colCode" text="Code" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

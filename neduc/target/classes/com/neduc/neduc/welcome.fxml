@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #C15854, #E9B376);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neduc.neduc.WelcomeController">
+
+    <left>
+        <VBox fx:id="animatedPane" alignment="CENTER_LEFT" prefHeight="650.0" prefWidth="450.0" spacing="20" style="-fx-padding: 50;">
+            
+            <Label style="-fx-font-size: 28px; -fx-text-fill: white; -fx-font-weight: bold;" text="🎓 Bienvenue sur Néduc" />
+            
+            <Label style="-fx-text-fill: white; -fx-font-size: 14px;" text="Suivi des étudiants, saisie des notes, calcul automatisé des moyennes, bulletins personnalisés, et bien plus..." wrapText="true" />
+            
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Button onAction="#handleLogin" style="-fx-background-color: #4B2828; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8 16 8 16; -fx-background-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 6, 0, 2, 2);" text="S’identifier" />
+                <!-- Exemple d’icône : tu peux activer cette ligne si tu as une image -->
+                <!-- <ImageView fitWidth="20" fitHeight="20" preserveRatio="true" image="@icon.png"/> -->
+            </HBox>
+        </VBox>
+    </left>
+
+    <center>
+        <ImageView fx:id="myGif" fitHeight="500.0" fitWidth="500.0" preserveRatio="true" />
+    </center>
+   <padding>
+      <Insets right="20.0" />
+   </padding>
+</BorderPane>

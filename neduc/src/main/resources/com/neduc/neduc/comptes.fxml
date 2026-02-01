@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.neduc.neduc.ComptesController">
+    <center>
+        <VBox spacing="10" style="-fx-padding: 20;">
+            <TableView fx:id="tableUsers">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" />
+                    <TableColumn fx:id="colNom" text="Nom" />
+                    <TableColumn fx:id="colPrenom" text="Prénom" />
+                    <TableColumn fx:id="colRole" text="Rôle" />
+                    <TableColumn fx:id="colEmail" text="Email" />
+                    <TableColumn fx:id="colActions" text="Actions autorisées" />
+                </columns>
+            </TableView>
+            <HBox spacing="10">
+                <Button fx:id="btnAjouter" text="Créer un utilisateur" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" />
+                <Button fx:id="btnModifier" text="Modifier sélection" disable="true" />
+                <Button fx:id="btnSupprimer" text="Supprimer" disable="true" style="-fx-background-color: #f44336; -fx-text-fill: white;" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
