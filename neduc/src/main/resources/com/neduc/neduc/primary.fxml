@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefWidth="1000.0" snapToPixel="false" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neduc.neduc.PrimaryController">
+    
+    <children>
+        <AnchorPane fx:id="custom" prefHeight="60.0" prefWidth="1440.0" style="-fx-background-color: linear-gradient(to right,#902424 0%, #DF611D 100%);">
+            <children>
+                <AnchorPane layoutX="14.0" layoutY="1.0" prefHeight="58.0" prefWidth="120.0">
+                    <children>
+                        <Text fill="WHITE" layoutX="40.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="duc" textAlignment="CENTER" wrappingWidth="83.21792602539062">
+                            <font>
+                                <Font name="Red Hat Display Medium" size="35.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="-6.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Né" textAlignment="CENTER" wrappingWidth="69.61801147460938">
+                            <font>
+                                <Font name="Red Hat Display Bold" size="35.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </children>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </AnchorPane>
+        <AnchorPane layoutY="60.0" prefHeight="700.0" prefWidth="0.0" style="-fx-background-color: FEFFDE;">
+            <children>
+                <AnchorPane fx:id="menu1" prefHeight="700.0" prefWidth="280.0" style="-fx-background-color: white;" stylesheets="@styles/style.css">
+                    <children>
+                        <BorderPane layoutX="80.0" layoutY="37.0" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: black; -fx-background-radius: 70;" />
+                        <Text layoutX="96.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mon Université">
+                            <fill>
+                                <LinearGradient endX="0.8371212410204338" endY="0.6249999918720939" startX="0.45075758388548187" startY="0.2954545165553238">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.5600000023841858" green="0.14000000059604645" blue="0.14000000059604645" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="0.7686274647712708" green="0.2980392277240753" blue="0.12156862765550613" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                            <font>
+                                <Font name="Red Hat Display Regular" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="45.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arodo School" textAlignment="CENTER">
+                            <font>
+                                <Font name="Nunito Bold" size="30.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="115.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier">
+                            <fill>
+                                <LinearGradient endX="0.8371212410204338" endY="0.6249999918720939" startX="0.45075758388548187" startY="0.2954545165553238">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.5600000023841858" green="0.14000000059604645" blue="0.14000000059604645" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color red="0.7686274647712708" green="0.2980392277240753" blue="0.12156862765550613" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                            <font>
+                                <Font name="Red Hat Display Regular" size="12.0" />
+                            </font>
+                        </Text>
+                        <AnchorPane fx:id="etudiantsMenu" layoutX="15.0" layoutY="337.0" onMouseClicked="#handleClickMenu1" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fx:id="" fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" onMouseClicked="#handleClickMenu1" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/students.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" onMouseClicked="#handleClickMenu1" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: bl;" text="Etudiants">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="evaluationsMenu" layoutX="15.0" layoutY="397.0" onMouseClicked="#handleClickMenu1" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/resultats.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluations">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="resultatsMenu" layoutX="15.0" layoutY="457.0" onMouseClicked="#handleClickMenu1" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/resultats.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultats">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="parametresMenu" layoutX="15.0" layoutY="517.0" onMouseClicked="#handleClickMenu1" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/settings.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Paramètres">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="bordMenu" layoutX="15.0" layoutY="277.0" onMouseClicked="#handleClickMenu1" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to right,#FF8E72 0%, #EE6221 100%); -fx-background-radius: 10; -fx-border-radius: 10;" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/dashboard_black.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tableau de bord" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <ImageView fitHeight="20.0" fitWidth="50.0" layoutX="200.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/edit.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="30.0" layoutX="235.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/line.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="30.0" layoutX="196.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/rectangle.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="40.0" layoutX="38.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/rectangle.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="5.0" fitWidth="30.0" layoutX="20.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/geometry.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="280.0" prefHeight="700.0" prefWidth="1140.0">
+                    <children>
+                        <AnchorPane fx:id="bordPane" prefHeight="700.0" prefWidth="1160.0">
+                            <children>
+                                <AnchorPane layoutX="101.0" layoutY="73.0" prefHeight="70.0" prefWidth="650.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <Label fx:id="leftLabel" layoutX="20.0" layoutY="17.0" prefWidth="90.0" style="-fx-text-fill: gray; -fx-cursor: hand; ">
+                                            <font>
+                                                <Font name="Red Hat Display Regular" size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="currentLabel" layoutX="289.0" layoutY="25.0" prefHeight="20.0" prefWidth="70.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" style="-fx-font-weight: bold;" textFill="#8b870b">
+                                            <font>
+                                                <Font name="Red Hat Display Regular" size="10.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="rightLabel" layoutX="530.0" layoutY="17.0" prefWidth="90.0" style="-fx-text-fill: gray; -fx-cursor: hand;">
+                                            <font>
+                                                <Font name="Red Hat Display Regular" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <Text fill="#000000a3" layoutX="101.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEMESTRE">
+                                    <font>
+                                        <Font name="Red Hat Display Italic" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fill="#000000a3" layoutX="408.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trier pas">
+                                    <font>
+                                        <Font name="Red Hat Display Italic" size="15.0" />
+                                    </font>
+                                </Text>
+                                <ComboBox fx:id="semestreBox" layoutX="191.0" layoutY="165.0" prefHeight="28.0" prefWidth="83.0" style="-fx-background-color: white;" />
+                                <ComboBox fx:id="filieresBox" layoutX="494.0" layoutY="165.0" prefHeight="28.0" prefWidth="120.0" promptText="Filières" style="-fx-background-color: WHITE;" />
+                                <ComboBox fx:id="anneesBox" layoutX="641.0" layoutY="165.0" prefHeight="28.0" prefWidth="120.0" promptText="Années" style="-fx-background-color: white;" />
+                                <AnchorPane layoutX="101.0" layoutY="227.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre d'étudiant">
+                                            <font>
+                                                <Font name="Red Hat Display SemiBold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Label fx:id="nombreEtu" layoutX="14.0" layoutY="46.0" text="123">
+                                            <font>
+                                                <Font name="System Bold" size="40.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="439.0" layoutY="227.0" prefHeight="150.0" prefWidth="320.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meilleur Moyenne">
+                                            <font>
+                                                <Font name="Red Hat Display SemiBold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Label fx:id="meilleurEtu" layoutX="14.0" layoutY="46.0" text="123">
+                                            <font>
+                                                <Font name="System Bold" size="40.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="101.0" layoutY="413.0" prefHeight="180.0" prefWidth="660.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moyenne Génerale">
+                                            <font>
+                                                <Font name="Red Hat Display SemiBold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Label fx:id="generaleEtu" layoutX="14.0" layoutY="61.0" text="123">
+                                            <font>
+                                                <Font name="System Bold" size="40.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="854.0" layoutY="22.0" prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: white;">
+                                    <children>
+                                        <Text layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actif" textAlignment="JUSTIFY">
+                                            <font>
+                                                <Font name="Red Hat Display SemiBold" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Line endX="123.0" layoutX="155.0" layoutY="104.0" startX="-5.800048828125" />
+                                        <Text fill="#000000a3" layoutX="48.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Audjourd’hui">
+                                            <font>
+                                                <Font name="Red Hat Display Bold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Line endX="123.0" layoutX="154.0" layoutY="333.0" startX="-62.4000244140625" />
+                                        <Text fill="#000000a3" layoutX="55.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hier">
+                                            <font>
+                                                <Font name="Red Hat Display Bold" size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane layoutX="101.0" layoutY="33.0" prefHeight="40.0" prefWidth="270.0">
+                                    <children>
+                                        <ImageView fitHeight="40.0" fitWidth="50.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/dashboard.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Text layoutX="52.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tableau de bord" textAlignment="JUSTIFY" wrappingWidth="217.61997985839844">
+                                            <font>
+                                                <Font name="Red Hat Display Regular" size="30.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="etudiantsPane" prefHeight="700.0" prefWidth="1160.0" style="-fx-background-color: white;" visible="false">
+                            <children>
+                                <Text layoutX="555.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trier pas">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <ComboBox fx:id="etudiantBox" layoutX="641.0" layoutY="31.0" prefHeight="28.0" prefWidth="120.0" promptText="Filières" style="-fx-background-color: white;" />
+                                <ComboBox fx:id="anneeBox" layoutX="788.0" layoutY="31.0" prefHeight="28.0" prefWidth="120.0" promptText="Années" style="-fx-background-color: white;" />
+                                <Text layoutX="940.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Années : ">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="20.0" />
+                                    </font>
+                                </Text>
+                                <Text fill="#8b870b" layoutX="1032.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2024-2025">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Text>
+                                <BorderPane layoutX="86.0" layoutY="30.0" prefHeight="20.0" prefWidth="270.0" style="-fx-border-color: black; -fx-border-radius: 2;">
+                                    <left>
+                                        <ImageView fitHeight="20.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                            <image>
+                                                <Image url="@images/search.png" />
+                                            </image>
+                                            <BorderPane.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </BorderPane.margin>
+                                        </ImageView>
+                                    </left>
+                                    <right>
+                                        <TextField prefHeight="30.0" prefWidth="233.0" promptText="Search" BorderPane.alignment="CENTER">
+                                            <font>
+                                                <Font name="Nunito Regular" size="12.0" />
+                                            </font>
+                                        </TextField>
+                                    </right>
+                                </BorderPane>
+                                <Button layoutX="460.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleAjouter" prefHeight="45.0" prefWidth="30.0" style="-fx-background-color: white;" textFill="WHITE">
+                                    <graphic>
+                                        <ImageView fitHeight="30.0" fitWidth="30.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/icons8_add_50px_1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Button>
+                                <AnchorPane layoutY="81.0" prefHeight="490.0" prefWidth="1160.0" style="-fx-background-color: black;">
+                                    <children>
+                                        <TableView fx:id="etudiantTable" layoutX="5.0" layoutY="5.0" prefHeight="480.0" prefWidth="1150.0" stylesheets="@styles/style.css">
+                                            <columns>
+                                                <TableColumn fx:id="numeroCol" resizable="false" sortable="false" styleClass="buttons-box" text="N°" />
+                                                <TableColumn fx:id="nomCol" prefWidth="190.0" resizable="false" sortable="false" styleClass="buttons-box" text="Nom" />
+                                                <TableColumn fx:id="prenomCol" prefWidth="190.0" resizable="false" sortable="false" styleClass="buttons-box" text="Prenom" />
+                                                <TableColumn fx:id="sexeCol" resizable="false" sortable="false" styleClass="buttons-box" text="Sexe" />
+                                                <TableColumn fx:id="dateCol" prefWidth="160.0" resizable="false" sortable="false" styleClass="buttons-box" text="Date de naissance" />
+                                                <TableColumn fx:id="lieuCol" prefWidth="160.0" resizable="false" sortable="false" styleClass="buttons-box" text="Lieu de naissance" />
+                                                <TableColumn fx:id="matriculeCol" prefWidth="160.0" resizable="false" sortable="false" styleClass="buttons-box" text="Numéro Matricule" />
+                                                <TableColumn fx:id="actionCol" prefWidth="130.0" resizable="false" sortable="false" text="Actions" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="evaluationsPane"  xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" layoutX="-1.0" layoutY="-1.0" prefHeight="700.0" prefWidth="1160.0" visible="false">
+                            <VBox spacing="20" style="-fx-padding: 20; -fx-background-color: fce5cc;">
+
+                                <HBox spacing="15" style="-fx-alignment: center-left;">
+                                    <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Filière:" />
+                                    <ComboBox fx:id="filiereComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+                                    <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Année:" />
+                                    <ComboBox fx:id="anneeComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+                                    <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Semestre:" />
+                                    <ComboBox fx:id="semestreComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+                                    <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="ECUE:" />
+                                    <ComboBox fx:id="ecueComboBox" prefWidth="150" style="-fx-background-color: #ffffff; -fx-text-fill: #ffffff;" />
+
+                                    <Button fx:id="btnChargerNotes" onAction="#handleChargerNotes" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Charger les notes" />
+                                </HBox>
+
+                                <TableView fx:id="tableNotes" editable="true" prefHeight="400" prefWidth="600">
+                                    <columns>
+                                        <TableColumn fx:id="colEtudiant" prefWidth="234.0" text="Étudiant" />
+                                        <TableColumn fx:id="colNote1" prefWidth="147.0" text="Contrôle 1" />
+                                        <TableColumn fx:id="colNote2" minWidth="0.0" prefWidth="160.0" text="Contrôle 2" />
+                                        <TableColumn fx:id="colNote3" minWidth="0.0" prefWidth="148.0" text="Contrôle 3" />
+                                        <TableColumn fx:id="colDevoir" minWidth="0.0" prefWidth="152.0" text="Devoir" />
+                                        <TableColumn fx:id="colMoyenne" editable="false" prefWidth="158.0" text="Moyenne" />
+                                    </columns>
+                                </TableView>
+
+                            </VBox>
+
+                        </AnchorPane>
+                        <AnchorPane fx:id="resultatsPane" layoutX="-1.0" prefHeight="700.0" prefWidth="1160.0" visible="false">
+                            <BorderPane>
+
+                                <top>
+                                    <Label text="Gestion des Résultats" style="-fx-font-size: 18px; -fx-font-weight: bold;" BorderPane.alignment="CENTER"/>
+                                </top>
+
+                                <center>
+                                    <TabPane fx:id="tabPane">
+                                        <tabs>
+                                            <Tab text="Relevés Collectifs" closable="false">
+                                                <fx:include source="releves.fxml"/>
+                                            </Tab>
+                                            <Tab text="Bulletins Individuels" closable="false">
+                                                <fx:include source="bulletins.fxml"/>
+                                            </Tab>
+                                        </tabs>
+                                    </TabPane>
+                                </center>
+                            </BorderPane>
+
+                        </AnchorPane>
+                        <AnchorPane fx:id="parametresPane" layoutX="-1.0" layoutY="-1.0" prefHeight="700.0" prefWidth="1160.0" visible="false">
+                            <VBox spacing="10" style="-fx-padding: 10;">
+                                <TabPane tabClosingPolicy="UNAVAILABLE">
+                                    <Tab text="Filières">
+                                        <content>
+                                            <fx:include source="filieres.fxml" />
+                                        </content>
+                                    </Tab>
+                                    <Tab text="UE/ECUE">
+                                        <content>
+                                            <fx:include source="ue_ecue.fxml" />
+                                        </content>
+                                    </Tab>
+                                    <Tab text="Utilisateurs">
+                                        <content>
+                                            <fx:include source="comptes.fxml" />
+                                        </content>
+                                    </Tab>
+                                    <Tab text="Sauvegarde">
+                                        <content>
+                                            <fx:include source="sauvegarde.fxml" />
+                                        </content>
+                                    </Tab>
+                                </TabPane>
+                            </VBox>
+
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="menu2" prefHeight="700.0" prefWidth="280.0" style="-fx-background-color: white;" visible="false">
+                    <children>
+                        <AnchorPane fx:id="etudiantsMenu2" layoutX="15.0" layoutY="90.0" onMouseClicked="#handleClickMenu2" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fx:id="1" fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" onMouseClicked="#handleClickMenu2" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/students.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" onMouseClicked="#handleClickMenu2" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: bl;" text="Etudiants">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="evaluationsMenu2" layoutX="15.0" layoutY="150.0" onMouseClicked="#handleClickMenu2" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/resultats.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluations">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="resultatsMenu2" layoutX="15.0" layoutY="210.0" onMouseClicked="#handleClickMenu2" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/resultats.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Resultats">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="parametresMenu2" layoutX="15.0" layoutY="270.0" onMouseClicked="#handleClickMenu2" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/settings.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Paramètres">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                        <AnchorPane fx:id="bordMenu2" layoutX="15.0" layoutY="30.0" onMouseClicked="#handleClickMenu2" prefHeight="45.0" prefWidth="250.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" styleClass="menu" stylesheets="@styles/style.css">
+                            <children>
+                                <ImageView fitHeight="30.0" fitWidth="50.0" layoutX="14.0" layoutY="8.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/dashboard_black.png" />
+                                    </image>
+                                </ImageView>
+                                <Text layoutX="60.0" layoutY="28.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="Tableau de bord" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Red Hat Display Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

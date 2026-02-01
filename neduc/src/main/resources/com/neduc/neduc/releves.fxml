@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.neduc.neduc.RelevesController">
+
+    <Label text="Relevé Collectif par Ordre de Mérite" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    
+    <TableView fx:id="relevesTable" editable="true">
+        <columns>
+            <TableColumn text="Rang" fx:id="colRang"/>
+            <TableColumn text="Matricule" fx:id="colMatricule"/>
+            <TableColumn text="Nom" fx:id="colNom"/>
+            <TableColumn text="Filière" fx:id="colFiliere"/>
+            <TableColumn text="Année" fx:id="colAnnee"/>
+            <TableColumn text="Moyenne Générale" fx:id="colMoyenneGenerale"/>
+        </columns>
+    </TableView>
+</VBox>

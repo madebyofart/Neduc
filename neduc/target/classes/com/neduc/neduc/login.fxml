@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #C15854, #E9B376);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neduc.neduc.LoginController">
+
+    <left>
+        <VBox alignment="CENTER_LEFT" prefHeight="650.0" prefWidth="450.0" spacing="20" style="-fx-padding: 50;">
+            
+            <Label style="-fx-font-size: 23px; -fx-font-weight: bold; -fx-text-fill: white;" text="S’identifier" />
+
+            <TextField fx:id="idField" promptText="Entrez votre ID" style="-fx-background-color: transparent; -fx-border-color: transparent transparent white transparent; -fx-border-width: 0 0 1 0; -fx-text-fill: white; -fx-prompt-text-fill: derive(white, -30%); -fx-font-size: 14px; -fx-padding: 5 0 5 0;" />
+
+            <PasswordField fx:id="passwordField" promptText="Entrez votre mot de passe" style="-fx-background-color: transparent;                                   -fx-border-color: transparent transparent white transparent;                                   -fx-border-width: 0 0 1 0;                                   -fx-text-fill: white;                                   -fx-prompt-text-fill: derive(white, -30%);                                   -fx-font-size: 14px;                                   -fx-padding: 5 0 5 0;" />
+
+            <Hyperlink onAction="#handleForgotPassword" style="-fx-text-fill: black; -fx-underline: true;" text="Mot de passe oublié?" />
+
+            <Button onAction="#handleLogin" style="-fx-background-color: #4B2828; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 16 8 16; -fx-background-radius: 5;" text="Envoyer" />
+
+            <!-- Label pour afficher les erreurs -->
+            <Label fx:id="errorLabel" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: red;" />
+
+            <Label style="-fx-font-size: 11px; -fx-text-fill: white; -fx-wrap-text: true;" text="* Seuls les administrateurs et enseignants autorisés peuvent se connecter." />
+        </VBox>
+    </left>
+
+    <center>
+        <ImageView fx:id="myGif" fitHeight="500" fitWidth="500" preserveRatio="true" />
+    </center>
+
+   <padding>
+      <Insets right="20.0" />
+   </padding>
+</BorderPane>

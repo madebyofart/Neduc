@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.neduc.neduc.UEController">
+    <center>
+        <VBox spacing="15" alignment="TOP_CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <HBox spacing="20" alignment="TOP_CENTER">
+                <TitledPane text="AJOUTER UNE UE" expanded="true">
+                    <content>
+                        <VBox spacing="10">
+                            <HBox spacing="10">
+                                <Label text="Nom :" />
+                                <TextField fx:id="nomUEField" />
+                            </HBox>
+                            <HBox spacing="10">
+                                <Label text="Code/Coef :" />
+                                <TextField fx:id="codeUEField" />
+                            </HBox>
+                            <HBox spacing="10">
+                                <Label text="Filière :" />
+                                <ComboBox fx:id="filiereComboBox" />
+                            </HBox>
+                            <Button text="Ajouter UE" onAction="#ajouterUE"/>
+                        </VBox>
+                    </content>
+                </TitledPane>
+
+                <TitledPane text="AJOUTER UNE ECUE LIÉE À UNE UE" expanded="true">
+                    <content>
+                        <VBox spacing="10">
+                            <HBox spacing="10">
+                                <Label text="Nom ECUE :" />
+                                <TextField fx:id="nomECUEField" />
+                            </HBox>
+                            <HBox spacing="10">
+                                <Label text="Coefficient :" />
+                                <TextField fx:id="coefficientECUEField" />
+                            </HBox>
+                            <HBox spacing="10">
+                                <Label text="UE associée :" />
+                                <ComboBox fx:id="comboUE" />
+                            </HBox>
+                            <Button text="Ajouter ECUE" onAction="#ajouterECUE"/>
+                        </VBox>
+                    </content>
+                </TitledPane>
+            </HBox>
+
+            <Label text="LISTE DES UE EXISTANTES" style="-fx-font-weight: bold;" />
+            <TableView fx:id="tableUE" prefHeight="300">
+                <columns>
+                    <TableColumn fx:id="colNum" text="N°" prefWidth="50"/>
+                    <TableColumn fx:id="colNom" text="UE" prefWidth="150"/>
+                    <TableColumn fx:id="colECUEs" text="ECUEs" prefWidth="250"/>
+                    <TableColumn fx:id="colFiliere" text="Filière" prefWidth="150"/>
+                    <TableColumn fx:id="colActions" text="Actions" prefWidth="100"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

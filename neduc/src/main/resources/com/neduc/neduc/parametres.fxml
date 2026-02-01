@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" style="-fx-padding: 10;">
+    <TabPane tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Filières">
+            <content><fx:include source="filieres.fxml" /></content>
+        </Tab>
+        <Tab text="UE/ECUE">
+            <content><fx:include source="ue_ecue.fxml" /></content>
+        </Tab>
+        <Tab text="Utilisateurs">
+            <content><fx:include source="comptes.fxml" /></content>
+        </Tab>
+        <Tab text="Sauvegarde">
+            <content><fx:include source="sauvegarde.fxml" /></content>
+        </Tab>
+    </TabPane>
+</VBox>
